@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+<h1 style="font-family: Monospace; text-align: center"><span>Convert</span><span className="font-extrabold italic" style="color: #86efac; font-style: italic;">+</span></h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## A secure, fast, reliable and open source way of converting your files.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multiple Format Support**: Convert between PDF, DOCX, ODT, TXT, HTML, JPG, PNG
+- **Multi-File Upload**: Select multiple files at once for batch conversion
+- **Image to PDF Merge**: Combine multiple images into a single PDF
+- **Drag & Drop**: Easy file upload with drag-and-drop support
+- **Secure & Private**: Files are automatically deleted after conversion
+- **No Registration Required**: Use the tool instantly without creating an account
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Dark Theme**: Modern dark interface with light green accents
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React 19 with TypeScript
+- Vite for build tooling
+- Tailwind CSS v4 for styling
+- React Router DOM for navigation
+- Axios for API calls
+- React Dropzone for file upload
+- React Icons for beautiful icons
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js with Express
+- LibreOffice for file conversion
+- Multer for file upload handling
+- Docker support for containerization
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📋 Supported Conversions
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| From | To |
+|------|-----|
+| PDF | DOCX, ODT, TXT, HTML, JPG, PNG |
+| DOCX | PDF, ODT, TXT, HTML |
+| Images (JPG, PNG) | PDF, JPG, PNG |
+| ODT, TXT, HTML | PDF, DOCX, ODT, TXT, HTML |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🏃‍♂️ Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Node.js 18 or higher
+- LibreOffice installed (for backend)
+- npm or yarn package manager
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository**
+```bash
+git clone https://github.com/ffelipeoliveira/convertplus_frontend.git
+cd convertplus_frontend
+npm install
+npm run dev
+
+Navigate to http://localhost:5173
+
+
+🎨 Color Palette
+* Primary Background: #191919  
+* Secondary Background: #2a2a2a  
+* Accent Color: #86efac  
+* Text Primary: #fafaff  
+* Text Secondary: #e4d9ff  
