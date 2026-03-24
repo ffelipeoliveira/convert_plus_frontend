@@ -1,1 +1,1 @@
-export { default } from "./Supported";
+export { default } from './Supported'
